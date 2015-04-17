@@ -16,7 +16,7 @@ package util
 		public static var controlBarLayer:Sprite;
 		
 		public static var currentVolume:Number = 1;
-		
+		public static var duration:Number = 0;
 		
 		
 		public function Global() 
