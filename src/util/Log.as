@@ -57,6 +57,11 @@ package util
 		{
 			var str:String = getQualifiedClassName(caller) + "----->" + obj;
 			trace(str);
+			if (text.length > 100000)
+				{
+					text.text = "";
+					text.appendText("too many log > 100000,clear!\n");
+				}
 			text.appendText(str);
 			MonsterDebugger.trace(caller, obj);
 		}
